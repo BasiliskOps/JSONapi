@@ -1,7 +1,7 @@
 require('./connection.js')
 let mongoose = require("mongoose");
-let coronaModel = require("./coronas/model");
-let websiteData = require("./data.json");
+let coronaModel = require("./INNER SANCTUM/model");
+let websiteData = require("./corona.json");
 coronaModel.deleteMany({}).then(
   coronaModel.create(websiteData).then((coronas) => {
     console.log(coronas.length, "Corona data established");

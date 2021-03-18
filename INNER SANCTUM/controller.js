@@ -25,7 +25,7 @@ let controller = {
         let corona = requestbody
         let id = request.params.id
         Corona  
-            .findByIdAndUpdate(id, bookmark, {new: true})
+            .findByIdAndUpdate(id, corona, {new: true})
             .then(corona=> response.json(corona))
     },
     destroy(request, response) {

@@ -1,6 +1,6 @@
 let express = require('express')
 
-let coronaRouter = require('./coronas/router')
+let coronaRouter = require('./INNER SANCTUM/router')
 
 let router = new express.Router()
 
