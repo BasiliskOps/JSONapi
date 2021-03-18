@@ -1,10 +1,11 @@
 let app = require('./app')
 
-app.set('port', process.env.PORT || 9000)
-let port = app.get('port')
+// app.set('port', process.env.PORT || 9000)
 let server = app.listen(app.get('port'))
+const PORT = process.env.PORT || '9000'
 
 
+app.set('port', PORT)
 server.on('listening', ()=> console.log('Server is listening'))
 server.on('error', ()=> console.error('Server is dead'))
 
