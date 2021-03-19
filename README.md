@@ -7,7 +7,7 @@ The SARS COVID-19 API is a daily summary of global coronavirus infections and de
 ## Usage
 ***
 
-Simply make a `GET`. request using `https://api.covid19api.com/summary` in order to interact with the API. No AUTH Key required!
+Simply make a `GET` request using `https://api.covid19api.com/summary` in order to interact with the API. No AUTH Key required!
 
 ## Contributing
 ***
