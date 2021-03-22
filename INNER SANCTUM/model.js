@@ -10,7 +10,7 @@ let coronaSchema = new mongoose.Schema({
     TotalRecovered: Number,
     Date: Date
     },
-    Countries: 
+    Countries: [
         {
             Country: String,
             NewConfirmed: Number,
@@ -21,11 +21,7 @@ let coronaSchema = new mongoose.Schema({
             TotalRecovered: Number,
             Date: Date
         } 
-    
-
-     
-
-
+    ]
 })
 
 let Corona = mongoose.model('Corona', coronaSchema)
