@@ -1,8 +1,8 @@
 let mongoose = require('mongoose')
 
 let countrySchema = new mongoose.Schema({
-    Countries: [
-        {
+    
+        
             Country: String,
             NewConfirmed: Number,
             TotalConfirmed: Number,
@@ -11,8 +11,7 @@ let countrySchema = new mongoose.Schema({
             NewRecovered: Number,
             TotalRecovered: Number,
             Date: Date
-        } 
-    ]
+        
 })
 
 
