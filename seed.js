@@ -6,12 +6,16 @@ let websiteData = require("./corona.json")
 coronaModel.deleteMany({}).then(
   coronaModel.create(websiteData).then((coronas) => {
     console.log(coronas.length, "Corona data established")
+    
+  })
+)
+countryModel.deleteMany({}).then( ()=> {
+  const allCountries = websiteData[0].Countries
+  console.log(allCountries.length)
+  countryModel.create(allCountries).then((coronas) => {
+    console.log(coronas.length, "Country data established")
     mongoose.disconnect()
   })
-);
-countryModel.deleteMany({}).then(
-  countryModel.create(websiteData).then((coronas) => {
-    console.log(coronas.length, "Corona data established")
-    mongoose.disconnect()
-  })
+}
+  
 );
