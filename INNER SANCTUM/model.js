@@ -1,6 +1,6 @@
 let mongoose = require('mongoose')
 
-let coronaSchema = new mongoose.Schema({
+let globalSchema = new mongoose.Schema({
    Global: {
     NewConfirmed: String,
     TotalDeaths: Number,
@@ -9,7 +9,10 @@ let coronaSchema = new mongoose.Schema({
     NewRecovered: String,
     TotalRecovered: Number,
     Date: Date
-    },
+    }
+})
+
+let countrySchema = new mongoose.Schema ({
     Countries: [
         {
             Country: String,
@@ -19,12 +22,9 @@ let coronaSchema = new mongoose.Schema({
             TotalDeaths: Number,
             NewRecovered: Number,
             TotalRecovered: Number,
-            Date: Date,
+            Date: Date
         } 
     ]
-
-     
-
 
 })
 
