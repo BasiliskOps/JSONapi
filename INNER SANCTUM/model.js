@@ -28,6 +28,6 @@ let countrySchema = new mongoose.Schema ({
 
 })
 
-let Corona = mongoose.model('Corona', coronaSchema)
+let Corona = mongoose.model('Corona', countrySchema, globalSchema)
 
 module.exports = Corona
