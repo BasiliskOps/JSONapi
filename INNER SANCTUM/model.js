@@ -1,11 +1,33 @@
 let mongoose = require('mongoose')
 
-let countrySchema = new mongoose.Schema({
-    name: String,
-    totalDeaths: Number,
-    totalRecovered: Number
+let globalSchema = new mongoose.Schema({
+  
+    NewConfirmed: String,
+    TotalDeaths: Number,
+    NewDeaths: Number,
+    TotalDeaths: Number,
+    NewRecovered: String,
+    TotalRecovered: Number,
+    Date: Date
+    
 })
 
-let Country = mongoose.model('Country',  countrySchema)
+let countrySchema = new mongoose.Schema ({
+ 
+            Name: String,
+            NewConfirmed: Number,
+            TotalConfirmed: Number,
+            NewDeaths: Number,
+            TotalDeaths: Number,
+            NewRecovered: Number,
+            TotalRecovered: Number,
+            Date: Date,
+        
+    
 
-module.exports = Country
+})
+
+let Global = mongoose.model('Global', globalSchema)
+let Country = mongoose.model('Country', countrySchema)
+
+module.exports = Global, Country
