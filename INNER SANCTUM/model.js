@@ -13,18 +13,18 @@ let globalSchema = new mongoose.Schema({
 })
 
 let countrySchema = new mongoose.Schema ({
-    Countries: [
+    Countries: 
         {
-            Country: String,
+            Name: String,
             NewConfirmed: Number,
             TotalConfirmed: Number,
             NewDeaths: Number,
             TotalDeaths: Number,
             NewRecovered: Number,
             TotalRecovered: Number,
-            Date: Date
+            Date: Date,
         } 
-    ]
+    
 
 })
 
