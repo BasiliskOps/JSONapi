@@ -15,7 +15,7 @@ let globalSchema = new mongoose.Schema({
 })
 
 let countrySchema = new mongoose.Schema({
-    
+    Countries: [{
         Name: String,
         NewConfirmed: Number,
         TotalConfirmed: Number,
@@ -24,6 +24,8 @@ let countrySchema = new mongoose.Schema({
         NewRecovered: Number,
         TotalRecovered: Number,
         Date: Date
+    }]
+        
 
 
 
