@@ -6,6 +6,6 @@ let controller = require('./controller')
 router.get('/', controller.readAll)
 router.get('/:id', controller.readById)
 router.post('/', controller.create)
-router.delete('/:new', controller.delete)
+router.delete('/:new', controller.destroy)
 
 module.exports = router
