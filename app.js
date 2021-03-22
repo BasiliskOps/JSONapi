@@ -1,5 +1,5 @@
 let express = require('express')
-let router = require('./INNER SANCTUM/router')
+let router = require('./router')
 
 let app = express()
 

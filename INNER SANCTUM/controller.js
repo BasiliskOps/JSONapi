@@ -1,4 +1,5 @@
 let Corona = require('./model')
+let Country = require('../cmodel')
 require('../connection')
 
 
@@ -33,7 +34,16 @@ let controller = {
         Corona
             .findByIdAndDelete(id)
             .then(()=> response.json({ok: true}))
+    },
+    getAllCountries(request, response) {
+        console.log(request)
+        Country
+            .find({})
+            .then((data)=> response.json(data))
+        
     }
+    
 }
+
 
 module.exports = controller
